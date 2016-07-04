@@ -8,7 +8,7 @@ You will need the following:
 2. composer
 3. virtualbox
 
-##Instructions
+##Installation
 1. run docker up -d
 
 #How to use it
