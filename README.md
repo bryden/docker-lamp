@@ -1,14 +1,14 @@
 # docker-lamp
 This repository contains a basic dev-ops environment for docker.
 
-##Requirements
+##Dependencies
 You will need the following:
 
 1. docker
 2. composer
 3. virtualbox
 
-##Installation
+##Installation - docker-lamp
 ```
 git clone https://github.com/bryden/docker-lamp.git
 cd docker-lamp
