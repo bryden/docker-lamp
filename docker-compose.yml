@@ -26,7 +26,7 @@ php:
 app:
     image: php:7.0-fpm
     volumes:
-        - .:/var/www/html
+        - ./dev_html:/var/www/html
     command: "true"
 
 mysql:
