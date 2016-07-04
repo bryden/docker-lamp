@@ -1,10 +1,12 @@
 # docker-lamp
 This repository contains a basic dev-ops environment for docker.
 
-Requirements
+##Requirements
+You will need the following:
+
 1. docker
 2. composer
 3. virtualbox
 
-Instructions
+##Instructions
 1. run docker up -d
