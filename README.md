@@ -28,4 +28,4 @@ All users..
 ```
 docker-compose up -d
 ```
-Visit 192.168.99.100 in your web browser. To add your website files, just paste them into the root directory (/docker-lamp/your-files here). To access phpMyAdmin, visit 192.168.99.100:8080.
+Visit 192.168.99.100 in your web browser. To add your website files, just paste them into the dev_html directory (docker-lamp/dev_html/your-files here). To access phpMyAdmin, visit 192.168.99.100:8080 and use the username root and password = "secret".
