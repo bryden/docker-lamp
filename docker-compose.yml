@@ -10,32 +10,39 @@ nginx:
     build: ./nginx/
     ports:
         - 80:80
+        - 3306
     links:
         - php
+        - mysql
     volumes_from:
         - app
+        - php
 php:
     build: ./php/
     expose:
         - 9000
     links:
         - mysql
+    volumes:
+        - ./php/php.ini:/usr/local/etc/php/php.ini
     volumes_from:
         - app
 
 app:
-    image: php:7.0-fpm
+    image: php:5.6-fpm
     volumes:
         - ./dev_html:/var/www/html
     command: "true"
 
 mysql:
     image: mysql:latest
+    ports:
+        - 3306:3306
     volumes_from:
         - data
     environment:
         MYSQL_ROOT_PASSWORD: secret
-        MYSQL_DATABASE: project
+        MYSQL_DATABASE: vtigercrm
         MYSQL_USER: project
         MYSQL_PASSWORD: project
 
