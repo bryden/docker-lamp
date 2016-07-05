@@ -43,6 +43,8 @@ data:
     image: mysql:latest
     volumes:
         - /var/lib/mysql
+    volumes_from:
+        - app
     command: "true"
 
 phpmyadmin:
